@@ -6,15 +6,20 @@
 <html>
 <head>
 	<title>Gmail autocomplete</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="public/css/styles.css">
 	<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
 </head>
 <body>
 		<div class="wrapper">
 		  <?php if (isset($_SESSION["token"])) { ?>
-		   	  <label for="txtSearch">Search your contacts:</label>
-					<i class="fa fa-search">hola</i>
-		      <input type="text" id="txtSearch">
+				<div class="form">
+					<label for="txtSearch">Search your contacts:</label>
+					<div class="search-field">
+						<i class="fa fa-search"></i>
+			      <input type="text" id="txtSearch">
+					</div>
+				</div>
 	      <?php }else { ?>
 					<a href="<?= $authUri; ?>" class="button">Provide Access</a>
 				<?php } ?>
