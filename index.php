@@ -6,12 +6,13 @@
 <html>
 <head>
 	<title>Gmail autocomplete</title>
+	<link rel="stylesheet" href="public/css/styles.css" >
 </head>
 <body>
 	  <?php if (isset($_SESSION["token"])) { ?>
    	  Search your contacts:<br>
-      <input type="text" id="txtSearch" name="search"> 
-      <?php } 
+      <input type="text" id="txtSearch" name="search">
+      <?php }
       else {
       	?> <a href="<?= $authUri; ?>">Provide Access</a> <?php
       }
