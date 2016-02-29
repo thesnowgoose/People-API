@@ -21,11 +21,10 @@
 					</div>
 				</div>
 	      <?php }else { ?>
-					<a href="<?= $authUri; ?>" class="button">Provide Access</a>
+					<a href="<?= $authUri; ?>" class="button"><i class="fa fa-google-plus"></i>Provide Access</a>
 				<?php } ?>
 	      <div id="results"></div>
 			</div>
-
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.1.js"></script>
       <script type="text/javascript" src="app.js"></script>
 </body>

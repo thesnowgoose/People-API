@@ -10,6 +10,26 @@ body {
   margin: 0 auto;
   padding: 100px 0;
 }
+a {
+  text-decoration: none;
+}
+.button {
+  background-color: #ad2c2d;
+  color: #fff;
+  padding: 10px;
+  display: block;
+  width: 30%;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 3px;
+}
+.button:hover {
+  background-color: #b72e32;
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+}
+.button i {
+  margin-right: 10px;
+}
 .form {
   border: 1px solid #ccc;
   padding: 30px;
