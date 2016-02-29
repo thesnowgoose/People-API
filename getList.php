@@ -14,7 +14,7 @@
 			if (count($person->getNames())!=0){
 				$names=$person->getNames();
 				$dispName = $names[0]->getDisplayName();
-				if (stristr($dispName, $text)===TRUE){
+				if (stristr($dispName, $text)==TRUE){
 					array_push($onlyNames, $dispName);
 				}
 			}			
